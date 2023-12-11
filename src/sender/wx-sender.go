@@ -99,7 +99,7 @@ func (wx *wxsender) Send(messages []*string) error {
 			}
 		}
 	}
-	if len(wx.friends) > 0 {
+	if len(wx.groups) > 0 {
 		for _, group := range wx.groups {
 			for _, message := range messages {
 				log.Printf("send message: %s", *message)
